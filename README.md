@@ -75,16 +75,7 @@ AI Interview Agent/
    ```bash
    npm install
    ```
-3. Create a `.env` file inside `backend/` (or edit the existing one) and fill out the details:
-   ```env
-   PORT=5000
-   MONGO_URI=mongodb://127.0.0.1:27017/ai_interview_agent
-   JWT_SECRET=your_jwt_secret_key_change_in_production
-   GEMINI_API_KEY=AIzaSyYourGeminiApiKeyHere
-   FRONTEND_URL=http://localhost:5173
-   NODE_ENV=development
-   ```
-4. Start the Express server:
+3. Start the Express server:
    *   For development (reloads on changes):
        ```bash
        npm run dev
