@@ -1,3 +1,4 @@
+
 # AI Interview Agent 🤖
 
 A production-ready, modern, scalable, responsive AI-powered web application designed to help college students, placement aspirants, and developers prepare for job interviews using Generative AI. 
@@ -124,3 +125,7 @@ You can verify that the Gemini API integration and response formatting functions
    node test-gemini.js
    ```
 3. The script will output confirmation details showing parsed resume mock entities and a graded sample question response.
+
+# AI-Interview-Agent
+AI-Powered Full Stack Web Application | Frontend | Backend | Generative AI
+
