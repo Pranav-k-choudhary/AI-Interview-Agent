@@ -22,7 +22,7 @@ The application reads and parses candidate resumes, dynamically conducts adaptiv
 ## 🛠️ Tech Stack
 
 *   **Frontend**: React.js, Vite, Tailwind CSS, React Router, Axios, Framer Motion, React Hook Form, Recharts, Lucide Icons
-*   **Backend**: Node.js, Express.js, MongoDB, Mongoose, JWT Authentication, bcryptjs, Multer, PDF-Parse, Cookie-Parser, Dotenv
+*   **Backend**: Node.js, Express.js, Mysql, JWT Authentication, bcryptjs, Multer, PDF-Parse, Cookie-Parser, Dotenv
 *   **Generative AI**: Google Gemini AI API SDK (`@google/generative-ai`)
 
 ---
@@ -62,7 +62,7 @@ AI Interview Agent/
 
 ### Prerequisites
 *   Node.js (v18+ recommended)
-*   MongoDB installed locally (or a MongoDB Atlas URI string)
+*   Mysql
 *   Google Gemini API Key (Obtain free from [Google AI Studio](https://aistudio.google.com/))
 
 ### 1. Configure the Backend
