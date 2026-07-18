@@ -32,7 +32,7 @@ The application reads and parses candidate resumes, dynamically conducts adaptiv
 ```text
 AI Interview Agent/
 ├── backend/
-│   ├── config/              # MongoDB connection setups
+│   ├── config/              # Mysql connection setups
 │   ├── controllers/         # Logic for auth, resume, interview, and admin operations
 │   ├── middleware/          # JWT protection, Multer upload filters
 │   ├── models/              # User, Resume, and Interview Mongoose Schemas
