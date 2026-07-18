@@ -11,7 +11,7 @@ The application reads and parses candidate resumes, dynamically conducts adaptiv
 
 *   **Secure Authentication**: Cookie-based JWT authentication, password hashing with bcrypt, protected router locks, and a mock password reset utility.
 *   **Resume parsing (AI-extracted)**: Upload resume PDFs. Extracts skills, programming languages, framework stacks, education, and projects via Gemini AI.
-*   **Adaptive Mock Interviews**: Generates personalized role-based interview queries (MERN, Frontend, Backend, Java stacks). The AI scales query difficulty up or down dynamically and requests deep conceptual breakdowns of projects extracted from the candidate's resume.
+*   **Adaptive Mock Interviews**: Generates personalized role-based interview queries (Frontend, Backend, Java stacks). The AI scales query difficulty up or down dynamically and requests deep conceptual breakdowns of projects extracted from the candidate's resume.
 *   **Granular Grading System**: Scores answers out of 10. Assesses response correctness, communication tone, technical vocabulary depth, and completeness. Recommends full perfect model answers.
 *   **Analytical Dashboards**: Score progress graphs using Recharts. Summarizes technical, communication, and problem-solving averages.
 *   **Skill Gap Analytics**: Pinpoints missing role-specific technologies, generates step-by-step career learning paths, and details 2 tailored portfolio projects to build.
