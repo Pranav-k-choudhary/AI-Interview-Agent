@@ -11,7 +11,7 @@ The application reads and parses candidate resumes, dynamically conducts adaptiv
 
 *   **Secure Authentication**: Cookie-based JWT authentication, password hashing with bcrypt, protected router locks, and a mock password reset utility.
 *   **Resume parsing (AI-extracted)**: Upload resume PDFs. Extracts skills, programming languages, framework stacks, education, and projects via Gemini AI.
-*   **Adaptive Mock Interviews**: Generates personalized role-based interview queries (MERN, Frontend, Backend, Java stacks). The AI scales query difficulty up or down dynamically and requests deep conceptual breakdowns of projects extracted from the candidate's resume.
+*   **Adaptive Mock Interviews**: Generates personalized role-based interview queries (Frontend, Backend, Java stacks). The AI scales query difficulty up or down dynamically and requests deep conceptual breakdowns of projects extracted from the candidate's resume.
 *   **Granular Grading System**: Scores answers out of 10. Assesses response correctness, communication tone, technical vocabulary depth, and completeness. Recommends full perfect model answers.
 *   **Analytical Dashboards**: Score progress graphs using Recharts. Summarizes technical, communication, and problem-solving averages.
 *   **Skill Gap Analytics**: Pinpoints missing role-specific technologies, generates step-by-step career learning paths, and details 2 tailored portfolio projects to build.
@@ -22,7 +22,7 @@ The application reads and parses candidate resumes, dynamically conducts adaptiv
 ## 🛠️ Tech Stack
 
 *   **Frontend**: React.js, Vite, Tailwind CSS, React Router, Axios, Framer Motion, React Hook Form, Recharts, Lucide Icons
-*   **Backend**: Node.js, Express.js, MongoDB, Mongoose, JWT Authentication, bcryptjs, Multer, PDF-Parse, Cookie-Parser, Dotenv
+*   **Backend**: Node.js, Express.js, Mysql, JWT Authentication, bcryptjs, Multer, PDF-Parse, Cookie-Parser, Dotenv
 *   **Generative AI**: Google Gemini AI API SDK (`@google/generative-ai`)
 
 ---
@@ -32,7 +32,7 @@ The application reads and parses candidate resumes, dynamically conducts adaptiv
 ```text
 AI Interview Agent/
 ├── backend/
-│   ├── config/              # MongoDB connection setups
+│   ├── config/              # Mysql connection setups
 │   ├── controllers/         # Logic for auth, resume, interview, and admin operations
 │   ├── middleware/          # JWT protection, Multer upload filters
 │   ├── models/              # User, Resume, and Interview Mongoose Schemas
@@ -62,7 +62,7 @@ AI Interview Agent/
 
 ### Prerequisites
 *   Node.js (v18+ recommended)
-*   MongoDB installed locally (or a MongoDB Atlas URI string)
+*   Mysql
 *   Google Gemini API Key (Obtain free from [Google AI Studio](https://aistudio.google.com/))
 
 ### 1. Configure the Backend
@@ -75,16 +75,7 @@ AI Interview Agent/
    ```bash
    npm install
    ```
-3. Create a `.env` file inside `backend/` (or edit the existing one) and fill out the details:
-   ```env
-   PORT=5000
-   MONGO_URI=mongodb://127.0.0.1:27017/ai_interview_agent
-   JWT_SECRET=your_jwt_secret_key_change_in_production
-   GEMINI_API_KEY=AIzaSyYourGeminiApiKeyHere
-   FRONTEND_URL=http://localhost:5173
-   NODE_ENV=development
-   ```
-4. Start the Express server:
+3. Start the Express server:
    *   For development (reloads on changes):
        ```bash
        npm run dev
